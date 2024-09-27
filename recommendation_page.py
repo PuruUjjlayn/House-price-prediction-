@@ -5,10 +5,10 @@ import numpy as np
 
 def display_recommendation():
 
-    location_df = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\location_df.pkl','rb'))
-    cosine_sim1 = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\cosine_sim1.pkl','rb'))
-    cosine_sim2 = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\cosine_sim2.pkl','rb'))
-    cosine_sim3 = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\cosine_sim3.pkl','rb'))
+    location_df = pickle.load(open('location_df.pkl','rb'))
+    cosine_sim1 = pickle.load(open('cosine_sim1.pkl','rb'))
+    cosine_sim2 = pickle.load(open('cosine_sim2.pkl','rb'))
+    cosine_sim3 = pickle.load(open('cosine_sim3.pkl','rb'))
 
     def recommend_properties_with_scores(property_name, top_n=5):
         cosine_sim_matrix = 0.5 * cosine_sim1 + 0.8 * cosine_sim2 + 1 * cosine_sim3
