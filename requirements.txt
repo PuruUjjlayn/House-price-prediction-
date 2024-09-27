@@ -6,4 +6,3 @@ WordCloud
 matplotlib
 seaborn
 numpy
-gunicorn==22.0.0
