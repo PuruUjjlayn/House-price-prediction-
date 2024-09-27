@@ -5,11 +5,11 @@ import numpy as np
 
 st.set_page_config(page_title="Recommend Appartments")
 
-location_df = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\Pages\location_df.pkl','rb'))
+location_df = pickle.load(open('Pages\location_df.pkl','rb'))
 
-cosine_sim1 = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\Pages\cosine_sim1.pkl','rb'))
-cosine_sim2 = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\Pages\cosine_sim2.pkl','rb'))
-cosine_sim3 = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\Pages\cosine_sim3.pkl','rb'))
+cosine_sim1 = pickle.load(open('Pages\cosine_sim1.pkl','rb'))
+cosine_sim2 = pickle.load(open('Pages\cosine_sim2.pkl','rb'))
+cosine_sim3 = pickle.load(open('Pages\cosine_sim3.pkl','rb'))
 
 
 def recommend_properties_with_scores(property_name, top_n=5):
