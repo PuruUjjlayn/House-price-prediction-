@@ -5,10 +5,10 @@ import pandas as pd
 
 st.set_page_config(page_title='Plotting Demo')
 
-with open('Pages\df.pkl','rb') as file :
+with open('House-price-prediction-\Pages\df.pkl','rb') as file :
     df = pickle.load(file)
 
-with open('Pages\best_pipeline.pkl','rb') as file :
+with open('House-price-prediction-\Pages\best_pipeline.pkl','rb') as file :
     pipeline = pickle.load(file)
 
 st.header('Enter your input')
