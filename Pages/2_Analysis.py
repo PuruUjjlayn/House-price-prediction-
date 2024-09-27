@@ -12,7 +12,7 @@ st.set_page_config(page_title="Plotting Demo")
 st.title('Analytics')
 
 # new df
-new_df = pd.read_csv(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\Pages\data_viz1.csv')
+new_df = pd.read_csv('Pages\data_viz1.csv')
 
 # group by data
 group_df = new_df.groupby('sector')[['price','price_per_sqft','built_up_area','latitude','longitude']].mean()
@@ -31,7 +31,7 @@ st.plotly_chart(fig,use_container_width=True)
 
 # 2. Features Wordcloud
 # feature pkl file
-feature_data = pickle.load(open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\Pages\sector_feature_dict.pkl','rb'))
+feature_data = pickle.load(open('Pages\sector_feature_dict.pkl','rb'))
 sectors = list(feature_data.keys())
 st.header('Features Wordcloud')
 selected_sector = st.selectbox('Select Sector', sectors)
