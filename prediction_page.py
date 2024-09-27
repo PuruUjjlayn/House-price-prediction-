@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 
 def display_prediction():
-    with open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\df.pkl','rb') as file :
+    with open('df.pkl','rb') as file :
         df = pickle.load(file)
 
-    with open(r'C:\Users\puruc\Downloads\render-projects\House-Price-Prediction\best_pipeline.pkl','rb') as file :
+    with open('best_pipeline.pkl','rb') as file :
         pipeline = pickle.load(file)
 
     st.header('Enter your input')
