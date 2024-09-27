@@ -7,3 +7,5 @@ matplotlib
 seaborn
 numpy
 category_encoders
+xgboost
+scikit-optimize
